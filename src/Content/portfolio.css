@@ -1,0 +1,45 @@
+.project {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    margin: 1.5em 0;
+}
+.project-content {
+    padding: .25em 1em 1em 1em;
+}
+.project-image {
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: #333333;
+}
+.project-image > img {
+    max-width: 95%;
+}
+.project-image:hover > img {
+    opacity: .25;
+}
+
+.project-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.project-links a {
+    align-items: center;
+    font-size: 1.75em;
+    color: #333333;
+    margin: 0 .5em;
+}
+.project-links a > i {
+    background-color: #DFA933;
+    padding: .5em;
+    border-radius: 50%;
+}
+.project-links a:hover {
+    color: #DFA933;
+}
+.project-links a:hover > i {
+    background-color: #333333;
+}

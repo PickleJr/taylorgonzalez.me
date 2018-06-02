@@ -6,3 +6,10 @@ body {
 h1 {
   margin: 0;
 }
+a, a:visited {
+  text-decoration: none;
+  color: #D00000;
+}
+a:hover {
+  text-decoration: underline;
+}

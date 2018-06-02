@@ -7,8 +7,9 @@ nav {
     width: 100%;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 8px;
+    z-index: 9999;
 }
-.nav-link {
+a.nav-link {
     flex: 1 1 0;
     text-align: center;
     color: #DFA933;
@@ -21,15 +22,15 @@ nav {
     justify-content: center;
     border-radius: 32px;
 }
-.nav-link:first-of-type {
+a.nav-link:first-of-type {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.nav-link:last-of-type {
+a.nav-link:last-of-type {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.nav-link:hover {
+a.nav-link:hover {
     background-color: #DFA933;
     color: #333333;
 }
