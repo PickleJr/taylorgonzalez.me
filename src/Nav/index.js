@@ -35,6 +35,7 @@ class Nav extends Component {
             top: offsetPosition,
             behavior: 'smooth'
         });
+        window.dispatchEvent(new Event('scroll'));
     }
 
     render() {

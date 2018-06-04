@@ -21,15 +21,17 @@ class UpArrow extends Component {
             let fontSize = helper / helloPosition
             fontSize = Math.trunc(fontSize);
             fontSize = fontSize + "px";
-            document.querySelector("#up-arrow").style.fontSize = fontSize;
+            document.querySelector("#up-button").style.fontSize = fontSize;
         }
     }
 
     render() {
         return(
-            <button onClick={this.props.onClick} id="up-arrow">
-                <i id="up-icon" className="fas fa-chevron-circle-up"></i>
-            </button>
+            <div id="up-arrow">
+                <button onClick={this.props.onClick} id="up-button">
+                    <i id="up-icon" className="fas fa-chevron-circle-up"></i>
+                </button>
+            </div>
         );
     }
 }

@@ -41,14 +41,27 @@ a.nav-link:hover {
     height: 40px;
     padding: 0;
     border: none;
+    background-color: #333333;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#up-button {
+    font-size: 0;
+    max-height: 40px;
+    max-width: 42px;
+    padding: 0;
+    margin: 0;
+    border: none;
     color: #DFA933;
     background-color: #333333;
 }
-#up-arrow:hover {
+#up-button:hover {
     color: #333333;
     cursor: pointer;
 }
-#up-arrow:hover > i {
+#up-button:hover > i {
     background-color: #DFA933;
     border-radius: 50%;
 }
