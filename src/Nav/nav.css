@@ -13,22 +13,21 @@ a.nav-link {
     flex: 1 1 0;
     text-align: center;
     color: #DFA933;
-    font-size: 24px;
+    font-size: 1.1em;
     background-color: #333333;
     border: 2px solid #DFA933;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 32px;
 }
-a.nav-link:first-of-type {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+#middle-nav-left {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
-a.nav-link:last-of-type {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+#middle-nav-right {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
 }
 a.nav-link:hover {
     background-color: #DFA933;
@@ -38,7 +37,8 @@ a.nav-link:hover {
 #up-arrow {
     flex: 0 0 42px;
     align-self: center;
-    font-size: 32px;
+    font-size: 0;
+    height: 40px;
     padding: 0;
     border: none;
     color: #DFA933;

@@ -6,7 +6,9 @@ class WorkHistory extends Component {
     render() {
         return(
             <div className="seciton">
-                <h2><span><i className="far fa-building"></i> Work History</span></h2>
+                <h2 id="Work-History">
+                    <span><i className="far fa-building"></i> Work History</span>
+                </h2>
                 <div className="timeline">
                     <div className="container">
                         <div className="job">

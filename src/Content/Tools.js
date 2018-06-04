@@ -1,54 +1,58 @@
 import React, { Component } from 'react';
 
-class Technologies extends Component {
+import './tools.css';
+
+class Tools extends Component {
     render() {
         return(
             <div className="section">
-                <h2><span><i className="fas fa-microchip"></i> Most Used Technologies</span></h2>
+                <h2 id="Tools">
+                    <span><i className="fas fa-microchip"></i> Most Used Tools</span>
+                </h2>
                 <p>
-                    I am familiar with many programming technologies. In web servers, I have experience with Apachie
+                    I am familiar with many programming tools. In web servers, I have experience with Apachie
                     ExpressJS, and Nginx. I have experiences with the C++, Rust, Java, C# and ASP.NET, Javascript programming
                     languages and more. I have a broad range of skils and am always happy to learn anything new. 
-                    With that said, below are some technologies I have used on a regular basis.
+                    With that said, below are some tools I have used on a regular basis.
                 </p>
-                <ul className="technologies">
-                    <li>
+                <ul className="tools">
+                    <li className="black">
                         <div><i className="icon-javascript"></i></div>
                         <div>Javascript</div>
                     </li>
-                    <li>
+                    <li className="gold">
                         <div><i className="icon-perl"></i></div>
                         <div>Perl</div>
                     </li>
-                    <li>
+                    <li className="black">
                         <div><i className="icon-php"></i></div>
                         <div>PHP</div>
                     </li>
-                    <li>
+                    <li className="gold">
                         <div><i className="icon-nodejs"></i></div>
                         <div>NodeJS</div>
                     </li>
-                    <li>
+                    <li className="black">
                         <div><i className="icon-reactjs"></i></div>
                         <div>ReactJS</div>
                     </li>
-                    <li>
+                    <li className="gold">
                         <div><i className="icon-java"></i></div>
                         <div>Java</div>
                     </li>
-                    <li>
+                    <li className="black">
                         <div><i className="icon-git"></i></div>
                         <div>Git</div>
                     </li>
-                    <li>
+                    <li className="gold">
                         <div><i className="icon-jquery"></i></div>
                         <div>Jquery</div>
                     </li>
-                    <li>
+                    <li className="black">
                         <div><i className="icon-postgres"></i></div>
                         <div>Postgres</div>
                     </li>
-                    <li>
+                    <li className="gold">
                         <div><i className="icon-ubuntu"></i></div>
                         <div>Ubuntu</div>
                     </li>
@@ -58,4 +62,4 @@ class Technologies extends Component {
     }
 }
 
-export default Technologies;
+export default Tools;

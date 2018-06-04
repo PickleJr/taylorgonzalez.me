@@ -1,5 +1,6 @@
 #content {
     padding: 0 1em;
+    padding-bottom: 1em;
 }
 
 h2::before {
@@ -8,10 +9,10 @@ h2::before {
     top: 50%;
     left: 0;
     width: 100%;
-    border-bottom: 4px solid #D00000;
+    border-bottom: 4px solid #725AC1;
 }
 h2 {
-    color: #725AC1;
+    color: #D00000;
     position: relative;
     margin-bottom: 1em;
     font-size: 22px;
@@ -26,7 +27,7 @@ h2 > span {
     background: #fff;
 }
 h2 > span > i {
-    color: #D00000;
+    color: #725AC1;
 }
 
 #work-history {

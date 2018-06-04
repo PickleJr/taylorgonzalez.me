@@ -10,7 +10,9 @@ class Portfolio extends Component {
     render() {
         return(
             <div className="section">
-                <h2 id="portfolio"><span><i className="far fa-file-alt"></i> Portfolio</span></h2>
+                <h2 id="Portfolio">
+                    <span><i className="far fa-file-alt"></i> Portfolio</span>
+                </h2>
                 <div id="portfolio-projects">
                     <div className="project">
                         <a className="project-image" href="http://notereader.taylorgonzalez.me/">

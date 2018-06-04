@@ -4,14 +4,15 @@ import './content.css';
 
 import WorkHistory from './WorkHistory';
 import Portfolio from './Portfolio';
-import Technologies from './Technologies';
+import Tools from './Tools';
+import Contact from './Contact';
 
 class Content extends Component {
     render() {
         return(
             <div id="content">
                 <div className="section">
-                    <h2><span><i className="far fa-smile"></i> Hello, World!</span></h2>
+                    <h2 id="Hello"><span><i className="far fa-smile"></i> Hello, World!</span></h2>
                     <p>
                         Hello! I'm <span id="name">Taylor Gonzalez</span> and I am a
                         Full Stack Developer and a Software engineer. I enjoy everything coding, from
@@ -21,7 +22,8 @@ class Content extends Component {
                 </div>
                 <WorkHistory/>
                 <Portfolio/>
-                <Technologies/>
+                <Tools/>
+                <Contact/>
             </div>
         );
     }

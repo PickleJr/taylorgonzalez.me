@@ -1,0 +1,37 @@
+label {
+    display: flex;
+    flex-direction: column;
+    padding: .5em 0;
+    font-size: 1.1em;
+}
+
+input[type=text], textarea {
+    font-size: 18px;
+    padding: 12px 20px;
+    color: black;
+    margin: 8px 0;
+    border: 3px solid #cccccc;
+    border-radius: 4px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+input[type=text]:focus, textarea:focus {
+    border: 3px solid #333333;
+}
+input:required, textarea:required {
+    box-shadow: none;
+}
+
+input[type=submit] {
+    background-color: #cccccc;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: .3s;
+}
+input[type=submit]:hover {
+    background-color: #AAAAAA;
+}
