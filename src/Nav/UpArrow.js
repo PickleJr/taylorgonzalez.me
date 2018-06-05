@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 
 class UpArrow extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            style: {
+                fontSize: 0
+            }
+        };
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -21,14 +32,19 @@ class UpArrow extends Component {
             let fontSize = helper / helloPosition
             fontSize = Math.trunc(fontSize);
             fontSize = fontSize + "px";
-            document.querySelector("#up-button").style.fontSize = fontSize;
+            //document.querySelector("#up-button").style.fontSize = fontSize;
+            this.setState({
+                style: {
+                    fontSize: fontSize
+                }
+            });
         }
     }
 
     render() {
         return(
             <div id="up-arrow">
-                <button onClick={this.props.onClick} id="up-button">
+                <button onClick={this.props.onClick} style={this.state.style} id="up-button">
                     <i id="up-icon" className="fas fa-chevron-circle-up"></i>
                 </button>
             </div>
