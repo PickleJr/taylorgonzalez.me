@@ -32,7 +32,6 @@ class UpArrow extends Component {
             let fontSize = helper / helloPosition
             fontSize = Math.trunc(fontSize);
             fontSize = fontSize + "px";
-            //document.querySelector("#up-button").style.fontSize = fontSize;
             this.setState({
                 style: {
                     fontSize: fontSize
