@@ -11,13 +11,14 @@ class Nav extends Component {
                 <div id="links">
                     <ul>
                         <li>
-                            <i className="fab fa-github"></i>
+                            <a  className="social-link" title="My Github" href="https://github.com/PickleJr">
+                                <i className="fab fa-github-square"></i>
+                            </a>
                         </li>
                         <li>
-                            <i className="fab fa-linkedin"></i>
-                        </li>
-                        <li>
-                            <i className="far fa-file-alt"></i>
+                            <a className="social-link" title="My Linkedin" href="https://www.linkedin.com/in/taylor-picklejr-gonzalez/">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>

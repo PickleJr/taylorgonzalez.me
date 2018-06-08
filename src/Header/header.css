@@ -6,8 +6,8 @@ header {
 }
 header > img {
     border-radius: 50%;
-    max-width: 50%;
-    width: 25em;
+    width: 15em;
+    margin: 1em;
 }
 header > p {
     margin: 0;
@@ -22,5 +22,16 @@ header > p {
 #links > ul > li {
     display: inline;
     padding: 0 5px;
+    margin: 4px 3px;
     font-size: 32px;
+}
+header a, header a:visited {
+    color: #DFA933;
+}
+
+.social-link:hover {
+    color: #333333;
+}
+.social-link:hover > i {
+    background-color: #DFA933;
 }

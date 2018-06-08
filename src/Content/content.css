@@ -1,5 +1,17 @@
 #content {
+    /*
     padding: 0 1em;
+    padding-bottom: 1em;
+    */
+}
+
+.section > * {
+    margin: 0 .75em;
+}
+.section > h2 {
+    margin: .75em 0;
+}
+.section:last-of-type {
     padding-bottom: 1em;
 }
 
@@ -9,25 +21,38 @@ h2::before {
     top: 50%;
     left: 0;
     width: 100%;
-    border-bottom: 4px solid #725AC1;
+    border-bottom: 4px solid #333333;
 }
 h2 {
     color: #D00000;
     position: relative;
     margin-bottom: 1em;
-    font-size: 22px;
+    font-size: 1.75em;
     font-weight: 400;
     text-align: left;
     background: inherit;
+    padding-left: .25em;
 }
 h2 > span {
     position: relative;
     display: inline-block;
-    padding-right: 1.2em;
+    padding: 0 .25em;
     background: #fff;
 }
 h2 > span > i {
-    color: #725AC1;
+    color: #333333;
+}
+h2[class=right] {
+    text-align: right;
+    padding-left: 0;
+    padding-right: .25em;
+}
+
+#Hello-p {
+    font-size: 1.25em;
+}
+p[class=right] {
+    text-align: right;
 }
 
 #work-history {
@@ -37,8 +62,36 @@ h2 > span > i {
 }
 
 .container {
-    border-bottom: 2px solid #725AC1;
+    border-bottom: 2px solid #D00000;
 }
 .container:last-of-type {
     border-bottom: none;
+}
+
+@media only screen and (min-width: 601px) {
+    h2 {
+        padding-left: 2em;
+    }
+    h2[class=right] {
+        padding-right: 2em;
+    }
+    #Hello-p {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section > * {
+        margin: 0 10em;
+    }
+    .section > h2 {
+        padding-left: 7.5em;
+    }
+    h2[class=right] {
+        padding-right: 7.5em;
+    }
+
+    #Hello-p {
+        font-size: 1.5em;
+    }
 }

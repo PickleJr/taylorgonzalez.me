@@ -35,3 +35,20 @@
     background-color: #DFA933;
     color: #333333;
 }
+
+@media only screen and (min-width: 601px) {
+    #Tools-p {
+        font-size: 1.25em;
+        padding-bottom: 1em;
+    }
+
+    .tools > li {
+        flex: 0 0 125px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .tools {
+        margin: 0 15em;
+    }
+}

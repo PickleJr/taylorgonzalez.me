@@ -5,7 +5,7 @@ import "./workhistory.css";
 class WorkHistory extends Component {
     render() {
         return(
-            <div className="seciton">
+            <div className="section">
                 <h2 id="Work-History">
                     <span><i className="far fa-building"></i> Work History</span>
                 </h2>

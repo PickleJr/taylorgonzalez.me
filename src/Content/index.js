@@ -12,8 +12,8 @@ class Content extends Component {
         return(
             <div id="content">
                 <div className="section">
-                    <h2 id="Hello"><span><i className="far fa-smile"></i> Hello, World!</span></h2>
-                    <p>
+                    <h2 className="right" id="Hello"><span><i className="far fa-smile"></i> Hello, World!</span></h2>
+                    <p id="Hello-p">
                         Hello! I'm <span id="name">Taylor Gonzalez</span> and I am a
                         Full Stack Developer and a Software engineer. I enjoy everything coding, from
                         working on systems applications using Rust or C++, to developing reactive web applications

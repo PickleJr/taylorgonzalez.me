@@ -39,3 +39,9 @@ input[type=submit]:hover {
 textarea {
     resize: none;
 }
+
+@media only screen and (min-width: 601px) {
+    form {
+        padding: 0 5em;
+    }
+}

@@ -24,7 +24,7 @@ class Portfolio extends Component {
                                 Note Reader is a simple application that takes text input and converts it to
                                 an MP3 file using IBM watson API. This was a school project, so due to limitations
                                 I did not develop a backend for it. However I created the ability to save notes and upload
-                                them later.
+                                them later. I have considered plans to make this into a Progressive Web App in the future!
                             </p>
                             <ul className="project-links">
                                 <li>
@@ -48,9 +48,10 @@ class Portfolio extends Component {
                             <h3>FHSU Calendar</h3>
                             <p>
                                 My remake of <a href="http://calendar.fhsu.edu" title="Fort Hays State University Calendar">FHSU's calendar.</a>
-                                It was a good excuse to learn RSS streams and had interesting problems such as generating
-                                dynamic calender months, and sorting and storing events for each date. It was also a good
-                                project for honing in on my ReactJS skills as well as learning webpack.
+                                I wanted to learn how to hread RSS streams and get more experience with ReactJS. 
+                                I had faced interesting problems such as generating
+                                dynamic calender views, and looking up events on any given date without causeing a long runtime. It was also a good
+                                project for further growing my knowledge with webpack and refreshing my skills with git.
                             </p>
                             <ul className="project-links">
                                 <li>

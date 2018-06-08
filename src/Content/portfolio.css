@@ -43,3 +43,21 @@
 .project-links a:hover > i {
     background-color: #333333;
 }
+@media only screen and (min-width: 650px) {
+    #portfolio-projects {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+    }
+    .project {
+        margin: 1em;
+        flex: 1 0 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .timeline {
+        margin: 0 13em;
+    }
+}
