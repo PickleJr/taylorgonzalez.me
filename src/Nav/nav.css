@@ -20,6 +20,7 @@ a.nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s;
 }
 #middle-nav-left {
     border-top-right-radius: 32px;
@@ -32,6 +33,13 @@ a.nav-link {
 a.nav-link:hover {
     background-color: #DFA933;
     color: #333333;
+}
+
+.active {
+    box-shadow: inset 0 0 10px #DFA933;
+}
+.active:hover {
+    box-shadow: inset 0 0 10px #333333;
 }
 
 #up-arrow {
@@ -55,6 +63,8 @@ a.nav-link:hover {
     border: none;
     color: #DFA933;
     background-color: #333333;
+    transition: none;
+    transition: color .3s;
 }
 #up-button:hover {
     color: #333333;

@@ -23,7 +23,7 @@ class Nav extends Component {
                     </ul>
                 </div>
                 <h1>Taylor Gonzalez</h1>
-                <p>Full-Stack Developer</p>
+                <p><i>Full-Stack Developer &amp;&amp; Software Engineer</i></p>
             </header>
         );
     }
