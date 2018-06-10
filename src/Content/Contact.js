@@ -61,7 +61,7 @@ class Contact extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        const data = new FormData(event.target);
+        let data = this.state.form;
 
         let newState = this.state;
         newState.form = {
@@ -75,7 +75,10 @@ class Contact extends Component {
 
         fetch("/sendmail", {
             method: 'POST',
-            body: data,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
         }).catch(err => {
             console.log(err);
             let state = this.state;

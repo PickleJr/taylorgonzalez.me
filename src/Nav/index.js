@@ -14,6 +14,7 @@ class Nav extends Component {
         }
         this.handleScrollTo = this.handleScrollTo.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
+        this.edgeFixer = this.edgeFixer.bind(this);
     }
 
     componentDidMount() {
@@ -61,16 +62,6 @@ class Nav extends Component {
                 active: '',
             });
         }
-
-        //Fix nav bar for edge
-        let ua = navigator.userAgent;
-        if(/MSIE 10/i.test(ua) || /MSIE 9/i.test(ua) || /EDGE\/\d./i.test(ua) || /rv:11.0/i.test(ua)) {
-            let state = this.state;
-            state.edgeFix = {top: 'auto'};
-            this.setState(state);
-            state.edgeFix = {};
-            this.setState(state);
-        }
     }
 
     handleScrollTo(event) {
@@ -106,14 +97,20 @@ class Nav extends Component {
             });
         }
         window.dispatchEvent(new Event('scroll'));
+        this.edgeFixer();
+    }
 
+    edgeFixer() {
         //Fix nav bar for edge
+        let ua = navigator.userAgent;
         if(/MSIE 10/i.test(ua) || /MSIE 9/i.test(ua) || /EDGE\/\d./i.test(ua) || /rv:11.0/i.test(ua)) {
             let state = this.state;
             state.edgeFix = {top: 'auto'};
             this.setState(state);
-            state.edgeFix = {};
-            this.setState(state);
+            setTimeout(() => {
+                state.edgeFix = {};
+                this.setState(state);
+            }, 1);
         }
     }
 
@@ -132,7 +129,7 @@ class Nav extends Component {
                 <a onClick={this.handleScrollTo} href="#Portfolio" id="middle-nav-left" className={classes.portfolio}>
                     Portfolio
                 </a>
-                <UpArrow onClick={this.handleScrollTo}/>
+                <UpArrow edgeFix={this.edgeFixer} onClick={this.handleScrollTo}/>
                 <a onClick={this.handleScrollTo} href="#Tools" id="middle-nav-right" className={classes.tools}>
                     Tools
                 </a>

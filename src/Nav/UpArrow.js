@@ -37,6 +37,7 @@ class UpArrow extends Component {
                     fontSize: fontSize
                 }
             });
+            this.props.edgeFix();
         } else if(pageY > helloPosition) {
             this.setState({
                 style: {
