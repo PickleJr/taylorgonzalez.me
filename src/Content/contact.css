@@ -10,38 +10,76 @@ input[type=text], textarea {
     padding: 12px 20px;
     color: black;
     margin: 8px 0;
-    border: 3px solid #cccccc;
+    border: 3px solid rgb(212, 206, 192);
     border-radius: 4px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 input[type=text]:focus, textarea:focus {
-    border: 3px solid #333333;
+    border: 3px solid #DFA933;
 }
 input:required, textarea:required {
     box-shadow: none;
 }
 
-input[type=submit] {
-    background-color: #cccccc;
+input[type=submit], button {
+    background: none;
     border-radius: 4px;
-    border: none;
+    border: 2px solid #DFA933;
     padding: 8px 16px;
     cursor: pointer;
     font-size: 1.1em;
     text-decoration: none;
     transition: .3s;
 }
-input[type=submit]:hover {
-    background-color: #AAAAAA;
+input[type=submit]:hover, button:hover {
+    background: #DFA933;
+    color: #FFFFFF;
 }
 
 textarea {
     resize: none;
 }
 
+#error {
+    color: #FFFFFF;
+    background-color: #D00000;
+    font-style: italic;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#form {
+    position: relative;
+    overflow: hidden;
+}
+#postback {
+    text-align: center;
+    padding-top: 3em !important;
+}
+#postback p {
+    font-size: 1.5em;
+}
+
+.postback-enter {
+    position: absolute;
+    left: -1200px;
+}
+.postback-enter.postback-enter-active {
+    left: 0;
+    transition: left 1s ease;
+}
+.postback-leave {
+    position: absolute;
+    left: 0;
+}
+.postback-leave.postback-leave-active {
+    left: 1200px;
+    transition: left 1s ease;
+}
+
 @media only screen and (min-width: 601px) {
-    form {
+    form, #postback {
         padding: 0 5em;
     }
 }
