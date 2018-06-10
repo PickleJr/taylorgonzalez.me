@@ -25,7 +25,7 @@ class UpArrow extends Component {
         const bodyRect = document.body.getBoundingClientRect().top;
         const helloRect = hello.getBoundingClientRect().top;
         const helloPosition = helloRect - bodyRect - 50;
-        const pageY = event.pageY;
+        const pageY = window.pageYOffset;
 
         if(pageY <= helloPosition) {
             let helper = pageY * 32;
@@ -35,6 +35,12 @@ class UpArrow extends Component {
             this.setState({
                 style: {
                     fontSize: fontSize
+                }
+            });
+        } else if(pageY > helloPosition) {
+            this.setState({
+                style: {
+                    fontSize: "32px"
                 }
             });
         }

@@ -10,6 +10,7 @@ class Nav extends Component {
 
         this.state = {
             active: '',
+            edgeFix: {},
         }
         this.handleScrollTo = this.handleScrollTo.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
@@ -24,7 +25,7 @@ class Nav extends Component {
     }
 
     handleScroll(event) {
-        const pageY = event.pageY;
+        const pageY = window.pageYOffset;
         const bodyRect = document.body.getBoundingClientRect().top;
         const elements = [
             document.querySelector('#Work-History'),
@@ -47,7 +48,7 @@ class Nav extends Component {
 
         let anyActive = false;
         for(var i = sectionPositions.length - 1; i >= 0; i--) {
-            if(pageY >= sectionPositions[i]) {
+            if(pageY >= sectionPositions[i] - 1) {
                 this.setState({
                     active: elements[i].getAttribute('id'),
                 });
@@ -59,6 +60,16 @@ class Nav extends Component {
             this.setState({
                 active: '',
             });
+        }
+
+        //Fix nav bar for edge
+        let ua = navigator.userAgent;
+        if(/MSIE 10/i.test(ua) || /MSIE 9/i.test(ua) || /EDGE\/\d./i.test(ua) || /rv:11.0/i.test(ua)) {
+            let state = this.state;
+            state.edgeFix = {top: 'auto'};
+            this.setState(state);
+            state.edgeFix = {};
+            this.setState(state);
         }
     }
 
@@ -81,12 +92,29 @@ class Nav extends Component {
         } else if(event.target.localName === "button") {
             offsetPosition = 0;
         }
+        if(offsetPosition === undefined) {
+            offsetPosition = 0;
+        }
 
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
+        const ua = navigator.userAgent;
+        if(/MSIE 10/i.test(ua) || /MSIE 9/i.test(ua) || /EDGE\/\d./i.test(ua) || /rv:11.0/i.test(ua)) {
+            window.scroll(0, offsetPosition);
+        } else {
+            window.scroll({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
         window.dispatchEvent(new Event('scroll'));
+
+        //Fix nav bar for edge
+        if(/MSIE 10/i.test(ua) || /MSIE 9/i.test(ua) || /EDGE\/\d./i.test(ua) || /rv:11.0/i.test(ua)) {
+            let state = this.state;
+            state.edgeFix = {top: 'auto'};
+            this.setState(state);
+            state.edgeFix = {};
+            this.setState(state);
+        }
     }
 
     render() {
@@ -97,7 +125,7 @@ class Nav extends Component {
             contact: 'nav-link' + ((this.state.active === 'Contact') ? ' active' : ''),
         }
         return(
-            <nav>
+            <nav style={this.state.edgeFix}>
                 <a onClick={this.handleScrollTo} href="#Work-History" className={classes.history}>
                     History
                 </a>
