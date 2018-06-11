@@ -81,3 +81,15 @@ a.nav-link:hover {
         width: auto;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        padding: 0 20em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        padding: 0 30em;
+    }
+}
