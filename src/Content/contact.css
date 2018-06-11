@@ -5,7 +5,7 @@ label {
     font-size: 1.1em;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
     font-size: 18px;
     padding: 12px 20px;
     color: black;
@@ -15,7 +15,7 @@ input[type=text], textarea {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border: 3px solid #DFA933;
 }
 input:required, textarea:required {
@@ -46,7 +46,7 @@ textarea {
     background-color: #D00000;
     font-style: italic;
     border-radius: 6px;
-    padding: 4px;
+    padding: 8px;
 }
 
 #form {

@@ -80,6 +80,8 @@ class Contact extends Component {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
+        }).then(res => {
+            return res.json();
         }).catch(err => {
             let state = this.state;
             if(state.postback) {
