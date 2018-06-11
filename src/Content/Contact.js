@@ -9,6 +9,7 @@ class Contact extends Component {
         this.state = {
             postback: false,
             formInfo: '',
+            formerr: '',
             form: {
                 name: '',
                 email: '',
@@ -80,23 +81,23 @@ class Contact extends Component {
             },
             body: JSON.stringify(data),
         }).catch(err => {
-            console.log(err);
             let state = this.state;
             if(state.postback) {
                 state.formInfo = 'error';
+                this.setState(state);
             }
-            this.setState(state);
         }).then(res => {
             let state = this.state;
             if(res.error) {
-                console.log("Error was made, see log");
                 if(state.postback) {
                     state.formInfo = 'error';
+                    state.formerr = res.msg;
+                    this.setState(state);
                 }
             } else {
                 state.formInfo = "Email went through! I'll look at your message soon.";
+                this.setState(state);
             }
-            this.setState(state);
         });
     }
 
@@ -104,6 +105,7 @@ class Contact extends Component {
         let state = this.state;
         state.postback = false;
         state.formInfo = '';
+        state.formerr = '';
         this.setState(state);
     }
 
@@ -111,7 +113,11 @@ class Contact extends Component {
         let message = this.state.formInfo;
         if(message === 'error') {
             message = (
-                <span id="error">There was an error, please try again or contact me through other means</span>
+                <span id="error">
+                    There was an error, please try again or contact me through other means
+                    <br/>
+                    {this.state.formerr}
+                </span>
             );
         }
         let display = (this.state.postback) ? (
@@ -127,7 +133,7 @@ class Contact extends Component {
                 </label>
                 <label>
                     <span>Email:</span>
-                    <input type="text" name="email" placeholder="Your email address..." value={this.state.email} onChange={this.handleInputChange} required/>
+                    <input type="email" name="email" placeholder="Your email address..." value={this.state.email} onChange={this.handleInputChange} required/>
                 </label>
                 <label>
                     <span>Message:</span>
