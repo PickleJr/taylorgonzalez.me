@@ -62,7 +62,7 @@ class Contact extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        let data = this.state.form;
+        let data = new FormData(event.target);
 
         let newState = this.state;
         newState.form = {
@@ -71,19 +71,18 @@ class Contact extends Component {
             message: '',
         };
         newState.postback = true;
-        newState.formInfo = 'sending';
+        newState.formInfo = 'Sending...';
         this.setState(newState);
 
-        fetch("/sendmail", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
+        fetch("/sendmail.php", {
+            method: 'post',
+            headers: (new Headers()).append('Content-Type', 'application/x-www-form-urlencoded'),
+            body: data,
         }).then(res => {
             return res.json();
         }).catch(err => {
             let state = this.state;
+            console.log(err);
             if(state.postback) {
                 state.formInfo = 'error';
                 this.setState(state);
