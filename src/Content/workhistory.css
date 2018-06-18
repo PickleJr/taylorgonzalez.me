@@ -11,19 +11,28 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .timeline {
-        margin: 0 13em;
+    .timeline h3 {
+        font-size: 1.5rem;
+    }
+    .job-date {
+        font-size: 1.1rem;
     }
 }
 
 @media only screen and (min-width: 1680px) {
-    .timeline {
-        margin: 0 26em;
+    .timeline h3 {
+        font-size: 2rem;
+    }
+    .timeline p {
+        font-size: 1.25rem;
+    }
+    .job-date {
+        font-size: 1.25rem;
+    }
+    .timeline ul {
+        font-size: 1.25rem;
     }
 }
 
 @media only screen and (min-width: 1680px) {
-    .timeline {
-        margin: 0 39em;
-    }
 }

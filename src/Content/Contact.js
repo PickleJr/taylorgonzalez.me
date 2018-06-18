@@ -145,7 +145,7 @@ class Contact extends Component {
         );
         return(
             <div className="section">
-                <h2 id="Contact">
+                <h2 className="right" id="Contact">
                     <span><i className="fab fa-wpforms"></i> Contact Me!</span>
                 </h2>
                 <div style={this.state.formHeight} id="form">

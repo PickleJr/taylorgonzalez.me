@@ -5,7 +5,7 @@ import "./workhistory.css";
 class WorkHistory extends Component {
     render() {
         return(
-            <div className="section">
+            <div className="alt-bg section">
                 <h2 id="Work-History">
                     <span><i className="far fa-building"></i> Work History</span>
                 </h2>
@@ -21,10 +21,10 @@ class WorkHistory extends Component {
                                     <ul>
                                         <li>Made older applications significantly faster and maintainable</li>
                                         <li>Updated GUI on applications to speed up work flow</li>
-                                        <li>Made new applications to accomplish tasks accross multiple shifts</li>
+                                        <li>Made new applications to accomplish tasks across multiple shifts</li>
                                     </ul>
                                 </li>
-                                <li>Started development on a front end tool to test web applications</li>
+                                <li>Started development on a front-end tool to test web applications</li>
                                 <li>Normalized Databases</li>
                                 <li>Wrote scripts to find errors in CSV files</li>
                             </ul>
@@ -37,9 +37,9 @@ class WorkHistory extends Component {
                             <p>University Relations &amp; marketing, Fort Hays State University, Hays, KS</p>
                             <ul>
                                 <li>Updated and maintained FHSU website while focusing on usability and quality assurance</li>
-                                <li>Assist departments when more difficult changes are needed on the website</li>
-                                <li>Assited in developing the FHSU virtual tour and built money saving applications</li>
-                                <li>Provite analytics to provide better user experience</li>
+                                <li>Assisted departments when more difficult changes are needed on the website</li>
+                                <li>Assisted in developing the FHSU virtual tour and built money saving applications</li>
+                                <li>Provided analytics to provide better user experience</li>
                             </ul>
                         </div>
                     </div>

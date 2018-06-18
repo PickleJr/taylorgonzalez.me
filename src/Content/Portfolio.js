@@ -9,8 +9,8 @@ import wheelof8ball from './wheel-of-8-ball-web.png';
 class Portfolio extends Component {
     render() {
         return(
-            <div className="section">
-                <h2 id="Portfolio">
+            <div id="portfolio" className="section">
+                <h2 className="right" id="Portfolio">
                     <span><i className="far fa-file-alt"></i> Portfolio</span>
                 </h2>
                 <div id="portfolio-projects">
@@ -22,8 +22,8 @@ class Portfolio extends Component {
                             <h3>Note Reader</h3>
                             <p>
                                 Note Reader is a simple application that takes text input and converts it to
-                                an MP3 file using IBM watson API. This was a school project, so due to limitations
-                                I did not develop a backend for it. However I created the ability to save notes and upload
+                                an MP3 file using IBM Watson API. This was a school project, so due to limitations
+                                I did not develop a backend for it. However, I created the ability to save notes and upload
                                 them later. I have considered plans to make this into a Progressive Web App in the future!
                             </p>
                             <ul className="project-links">
@@ -47,10 +47,10 @@ class Portfolio extends Component {
                         <div className="project-content">
                             <h3>FHSU Calendar</h3>
                             <p>
-                                My remake of <a href="http://calendar.fhsu.edu" title="Fort Hays State University Calendar">FHSU's calendar.</a>
-                                I wanted to learn how to hread RSS streams and get more experience with ReactJS. 
+                                My remake of <a href="http://calendar.fhsu.edu" title="Fort Hays State University Calendar">FHSU's calendar.</a> 
+                                I wanted to learn how to read RSS streams and get more experience with ReactJS. 
                                 I had faced interesting problems such as generating
-                                dynamic calender views, and looking up events on any given date without causeing a long runtime. It was also a good
+                                dynamic calendar views, and looking up events on any given date without causing a long runtime. It was also a good
                                 project for further growing my knowledge with webpack and refreshing my skills with git.
                             </p>
                             <ul className="project-links">
@@ -74,9 +74,9 @@ class Portfolio extends Component {
                         <div className="project-content">
                             <h3>Wheel of 8 Ball</h3>
                             <p>
-                                Another school project, this webapp is simply a Wheel of Fortune themed Magic 8 Ball.
-                                Ask it a yes or no questoin and it will give you an answer. The school project itself was to simply
-                                make a Web App that reacts to browser events. However I always like to push my self and learn new things.
+                                Another school project, this web app is simply a Wheel of Fortune themed Magic 8 Ball.
+                                Ask it a yes or no question and it will give you an answer. The school project itself was to simply
+                                make a Web App that reacts to browser events. However, I always like to push myself and learn new things.
                                 I went ahead and dabbled in VueJS and leaned PugJS for this project.
                             </p>
                             <ul className="project-links">

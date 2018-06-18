@@ -5,20 +5,20 @@ import './tools.css';
 class Tools extends Component {
     render() {
         return(
-            <div className="section">
+            <div className="alt-bg section">
                 <h2 id="Tools">
                     <span><i className="fas fa-microchip"></i> Most Used Tools</span>
                 </h2>
                 <p id="Tools-p">
-                    I am familiar with many programming tools. In web servers, I have experience with Apachie
-                    ExpressJS, and Nginx. I have experiences with the C++, Rust, Java, C# and ASP.NET, Javascript programming
-                    languages and more. I have a broad range of skils and am always happy to learn anything new. 
+                    I am familiar with many programming tools. In web servers, I have experience with Apachie,
+                    ExpressJS, and Nginx. I have experiences with the C++, Rust, Java, C# and ASP.NET, JavaScript programming
+                    languages and more. I have a broad range of skills and am always happy to learn anything new. 
                     With that said, below are some tools I have used on a regular basis.
                 </p>
                 <ul className="tools">
                     <li className="black">
                         <div><i className="icon-javascript"></i></div>
-                        <div>Javascript</div>
+                        <div>JavaScript</div>
                     </li>
                     <li className="gold">
                         <div><i className="icon-perl"></i></div>
@@ -46,11 +46,11 @@ class Tools extends Component {
                     </li>
                     <li className="gold">
                         <div><i className="icon-jquery"></i></div>
-                        <div>Jquery</div>
+                        <div>jQuery</div>
                     </li>
                     <li className="black">
                         <div><i className="icon-postgres"></i></div>
-                        <div>Postgres</div>
+                        <div>Postgress</div>
                     </li>
                     <li className="gold">
                         <div><i className="icon-ubuntu"></i></div>

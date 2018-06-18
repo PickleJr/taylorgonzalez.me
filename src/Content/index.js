@@ -11,7 +11,7 @@ class Content extends Component {
     render() {
         return(
             <div id="content">
-                <div className="section">
+                <div id="first-section" className="section">
                     <h2 className="right" id="Hello"><span><i className="far fa-smile"></i> Hello, World!</span></h2>
                     <p id="Hello-p">
                         Hello! I'm <span id="name">Taylor Gonzalez</span> and I am a

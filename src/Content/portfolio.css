@@ -58,3 +58,16 @@
         flex: 1 0 150px;
     }
 }
+
+@media only screen and (min-width: 1680px) {
+    #portfolio > * {
+        max-width: 1200px;
+    }
+
+    .project-content > h3 {
+        font-size: 1.5rem;
+    }
+    .project-content > p {
+        font-size: 1.25rem;
+    }
+}

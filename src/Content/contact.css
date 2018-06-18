@@ -85,7 +85,4 @@ textarea {
 }
 
 @media only screen and (min-width: 1680px) {
-    form, #postback {
-        padding: 0 10em;
-    }
 }

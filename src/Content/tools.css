@@ -38,7 +38,7 @@
 
 @media only screen and (min-width: 601px) {
     #Tools-p {
-        font-size: 1.25em;
+        font-size: 1.5em;
         padding-bottom: 1em;
     }
 
@@ -49,24 +49,7 @@
 
 @media only screen and (min-width: 1200px) {
     .tools {
-        margin: 0 15em;
-    }
-}
-
-@media only screen and (min-width: 1680px) {
-    #Tools-p {
-        margin: 0 23.5em;
-    }
-    .tools {
-        margin: 0 30em;
-    }
-}
-
-@media only screen and (min-width: 1680px) {
-    #Tools-p {
-        margin: 0 40em;
-    }
-    .tools {
-        margin: 0 57em;
+        max-width: 800px;
+        margin: 0 auto;
     }
 }

@@ -61,6 +61,8 @@ p[class=right] {
     border-bottom: none;
 }
 
+
+
 @media only screen and (min-width: 601px) {
     h2 {
         padding-left: 2em;
@@ -73,43 +75,39 @@ p[class=right] {
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .section > * {
-        margin: 0 10em;
+@media only screen and (min-width: 900px) {
+    .section {
+        padding-bottom: 5em;
+    }
+    .section:last-of-type {
+        padding-bottom: 5em;
     }
     .section > h2 {
-        padding-left: 7.5em;
-    }
-    h2[class=right] {
-        padding-right: 7.5em;
+        margin-bottom: 5rem;
+        font-size: 2em;
+        max-width: 100%;
+        padding: 0 7em;
     }
 
-    #Hello-p {
-        font-size: 1.5em;
+    .section > * {
+        max-width: 900px;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 1680px) {
-    .section > * {
-        margin: 0 20em;
-    }
     .section > h2 {
-        padding-left: 12em;
+        padding: 0 14em;
+        font-size: 2.25em;
+    }
+    
+    #Hello-p {
         font-size: 2em;
     }
-    h2[class=right] {
-        padding-right: 12em;
-    }
-
 }
+
 @media only screen and (min-width: 2560px) {
-    .section > * {
-        margin: 0 35em;
-    }
     .section > h2 {
-        padding-left: 18em;
-    }
-    h2[class=right] {
-        padding-right: 18em;
+        padding: 0 18em;
     }
 }
