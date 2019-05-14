@@ -4,6 +4,7 @@ import './portfolio.css';
 
 import notereader from './note-reader-web.png';
 import fhsucalendar from './fhsu-calendar-web.png';
+import scanAndGo from './scan-and-go.png';
 import wheelof8ball from './wheel-of-8-ball-web.png';
 
 class Portfolio extends Component {
@@ -14,6 +15,33 @@ class Portfolio extends Component {
                     <span><i className="far fa-file-alt"></i> Portfolio</span>
                 </h2>
                 <div id="portfolio-projects">
+                    <div className="project">
+                        <a className="project-image" href="https://scan-and-go.herokuapp.com/">
+                            <img src={scanAndGo} title="San and Go Screenshot" alt="San and Go Screenshot"/>
+                        </a>
+                        <div className="project-content">
+                            <h3>Scan and Go</h3>
+                            <p>
+                                Scan and Go is an experimental app that was thought up to a be a way to improve the grocery
+                                shopping experience. It is a Progressive Web App, meaning even though it is on the web, users can
+                                'download' the app to their phone and use it offline. It saves lists to your device and utilizes
+                                your devices camera. It potentially can scan barcodes, but due to the limitations of the library I
+                                used, it is not 100% effective. 
+                            </p>
+                            <ul className="project-links">
+                                <li>
+                                    <a href="https://github.com/PickleJr/scan-and-go">
+                                        <i className="fab fa-github-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://scan-and-go.herokuapp.com/">
+                                        <i className="fas fa-link"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className="project">
                         <a className="project-image" href="http://notereader.taylorgonzalez.me/">
                             <img src={notereader} title="Note Reader Screenshot" alt="Note Reader Screenshot"/>
